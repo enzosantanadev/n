@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>a</title>
+        <style>
+            @import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+            @import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+
+            /*! tailwindcss v3.4.11 | MIT License | https://tailwindcss.com*/
+            *,
+            :after,
+            :before {
+                border: 0 solid #e5e7eb;
+                box-sizing: border-box;
+            }
+            :after,
+            :before {
+                --tw-content: "";
+            }
+            :host,
+            html {
+                line-height: 1.5;
+                -webkit-text-size-adjust: 100%;
+                font-family:
+                    Open Sans,
+                    ui-sans-serif,
+                    system-ui,
+                    sans-serif,
+                    Apple Color Emoji,
+                    Segoe UI Emoji,
+                    Segoe UI Symbol,
+                    Noto Color Emoji;
+                font-feature-settings: normal;
+                font-variation-settings: normal;
+                -moz-tab-size: 4;
+                tab-size: 4;
+                -webkit-tap-highlight-color: transparent;
+            }
+            body {
+                line-height: inherit;
+                margin: 0;
+            }
+            hr {
+                border-top-width: 1px;
+                color: inherit;
+                height: 0;
+            }
+            abbr:where([title]) {
+                text-decoration: underline dotted;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: inherit;
+                font-weight: inherit;
+            }
+            a {
+                color: inherit;
+                text-decoration: inherit;
+            }
+            b,
+            strong {
+                font-weight: bolder;
+            }
+            code,
+            kbd,
+            pre,
+            samp {
+                font-family:
+                    ui-monospace,
+                    SFMono-Regular,
+                    Menlo,
+                    Monaco,
+                    Consolas,
+                    Liberation Mono,
+                    Courier New,
+                    monospace;
+                font-feature-settings: normal;
+                font-size: 1em;
+                font-variation-settings: normal;
+            }
+            small {
+                font-size: 80%;
+            }
+            sub,
+            sup {
+                font-size: 75%;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline;
+            }
+            sub {
+                bottom: -0.25em;
+            }
+            sup {
+                top: -0.5em;
+            }
+            table {
+                border-collapse: collapse;
+                border-color: inherit;
+                text-indent: 0;
+            }
+            button,
+            input,
+            optgroup,
+            select,
+            textarea {
+                color: inherit;
+                font-family: inherit;
+                font-feature-settings: inherit;
+                font-size: 100%;
+                font-variation-settings: inherit;
+                font-weight: inherit;
+                letter-spacing: inherit;
+                line-height: inherit;
+                margin: 0;
+                padding: 0;
+            }
+            button,
+            select {
+                text-transform: none;
+            }
+            button,
+            input:where([type="button"]),
+            input:where([type="reset"]),
+            input:where([type="submit"]) {
+                -webkit-appearance: button;
+                background-color: transparent;
+                background-image: none;
+            }
+            :-moz-focusring {
+                outline: auto;
+            }
+            :-moz-ui-invalid {
+                box-shadow: none;
+            }
+            progress {
+                vertical-align: baseline;
+            }
+            ::-webkit-inner-spin-button,
+            ::-webkit-outer-spin-button {
+                height: auto;
+            }
+            [type="search"] {
+                -webkit-appearance: textfield;
+                outline-offset: -2px;
+            }
+            ::-webkit-search-decoration {
+                -webkit-appearance: none;
+            }
+            ::-webkit-file-upload-button {
+                -webkit-appearance: button;
+                font: inherit;
+            }
+            summary {
+                display: list-item;
+            }
+            blockquote,
+            dd,
+            dl,
+            figure,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            hr,
+            p,
+            pre {
+                margin: 0;
+            }
+            fieldset {
+                margin: 0;
+            }
+            fieldset,
+            legend {
+                padding: 0;
+            }
+            menu,
+            ol,
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            dialog {
+                padding: 0;
+            }
+            textarea {
+                resize: vertical;
+            }
+            input::placeholder,
+            textarea::placeholder {
+                color: #9ca3af;
+                opacity: 1;
+            }
+            [role="button"],
+            button {
+                cursor: pointer;
+            }
+            :disabled {
+                cursor: default;
+            }
+            audio,
+            canvas,
+            embed,
+            iframe,
+            img,
+            object,
+            svg,
+            video {
+                display: block;
+                vertical-align: middle;
+            }
+            img,
+            video {
+                height: auto;
+                max-width: 100%;
+            }
+            [hidden] {
+                display: none;
+            }
+            *,
+            :after,
+            :before {
+                --tw-border-spacing-x: 0;
+                --tw-border-spacing-y: 0;
+                --tw-translate-x: 0;
+                --tw-translate-y: 0;
+                --tw-rotate: 0;
+                --tw-skew-x: 0;
+                --tw-skew-y: 0;
+                --tw-scale-x: 1;
+                --tw-scale-y: 1;
+                --tw-pan-x: ;
+                --tw-pan-y: ;
+                --tw-pinch-zoom: ;
+                --tw-scroll-snap-strictness: proximity;
+                --tw-gradient-from-position: ;
+                --tw-gradient-via-position: ;
+                --tw-gradient-to-position: ;
+                --tw-ordinal: ;
+                --tw-slashed-zero: ;
+                --tw-numeric-figure: ;
+                --tw-numeric-spacing: ;
+                --tw-numeric-fraction: ;
+                --tw-ring-inset: ;
+                --tw-ring-offset-width: 0px;
+                --tw-ring-offset-color: #fff;
+                --tw-ring-color: rgba(59, 130, 246, 0.5);
+                --tw-ring-offset-shadow: 0 0 #0000;
+                --tw-ring-shadow: 0 0 #0000;
+                --tw-shadow: 0 0 #0000;
+                --tw-shadow-colored: 0 0 #0000;
+                --tw-blur: ;
+                --tw-brightness: ;
+                --tw-contrast: ;
+                --tw-grayscale: ;
+                --tw-hue-rotate: ;
+                --tw-invert: ;
+                --tw-saturate: ;
+                --tw-sepia: ;
+                --tw-drop-shadow: ;
+                --tw-backdrop-blur: ;
+                --tw-backdrop-brightness: ;
+                --tw-backdrop-contrast: ;
+                --tw-backdrop-grayscale: ;
+                --tw-backdrop-hue-rotate: ;
+                --tw-backdrop-invert: ;
+                --tw-backdrop-opacity: ;
+                --tw-backdrop-saturate: ;
+                --tw-backdrop-sepia: ;
+                --tw-contain-size: ;
+                --tw-contain-layout: ;
+                --tw-contain-paint: ;
+                --tw-contain-style: ;
+            }
+            ::backdrop {
+                --tw-border-spacing-x: 0;
+                --tw-border-spacing-y: 0;
+                --tw-translate-x: 0;
+                --tw-translate-y: 0;
+                --tw-rotate: 0;
+                --tw-skew-x: 0;
+                --tw-skew-y: 0;
+                --tw-scale-x: 1;
+                --tw-scale-y: 1;
+                --tw-pan-x: ;
+                --tw-pan-y: ;
+                --tw-pinch-zoom: ;
+                --tw-scroll-snap-strictness: proximity;
+                --tw-gradient-from-position: ;
+                --tw-gradient-via-position: ;
+                --tw-gradient-to-position: ;
+                --tw-ordinal: ;
+                --tw-slashed-zero: ;
+                --tw-numeric-figure: ;
+                --tw-numeric-spacing: ;
+                --tw-numeric-fraction: ;
+                --tw-ring-inset: ;
+                --tw-ring-offset-width: 0px;
+                --tw-ring-offset-color: #fff;
+                --tw-ring-color: rgba(59, 130, 246, 0.5);
+                --tw-ring-offset-shadow: 0 0 #0000;
+                --tw-ring-shadow: 0 0 #0000;
+                --tw-shadow: 0 0 #0000;
+                --tw-shadow-colored: 0 0 #0000;
+                --tw-blur: ;
+                --tw-brightness: ;
+                --tw-contrast: ;
+                --tw-grayscale: ;
+                --tw-hue-rotate: ;
+                --tw-invert: ;
+                --tw-saturate: ;
+                --tw-sepia: ;
+                --tw-drop-shadow: ;
+                --tw-backdrop-blur: ;
+                --tw-backdrop-brightness: ;
+                --tw-backdrop-contrast: ;
+                --tw-backdrop-grayscale: ;
+                --tw-backdrop-hue-rotate: ;
+                --tw-backdrop-invert: ;
+                --tw-backdrop-opacity: ;
+                --tw-backdrop-saturate: ;
+                --tw-backdrop-sepia: ;
+                --tw-contain-size: ;
+                --tw-contain-layout: ;
+                --tw-contain-paint: ;
+                --tw-contain-style: ;
+            }
+            #webcrumbs .absolute {
+                position: absolute;
+            }
+            #webcrumbs .relative {
+                position: relative;
+            }
+            #webcrumbs .-right-12 {
+                right: -48px;
+            }
+            #webcrumbs .top-1\/2 {
+                top: 50%;
+            }
+            #webcrumbs .my-4 {
+                margin-top: 16px;
+            }
+            #webcrumbs .mb-4,
+            #webcrumbs .my-4 {
+                margin-bottom: 16px;
+            }
+            #webcrumbs .flex {
+                display: flex;
+            }
+            #webcrumbs .grid {
+                display: grid;
+            }
+            #webcrumbs .aspect-video {
+                aspect-ratio: 16/9;
+            }
+            #webcrumbs .h-10 {
+                height: 40px;
+            }
+            #webcrumbs .h-14 {
+                height: 56px;
+            }
+            #webcrumbs .h-20 {
+                height: 80px;
+            }
+            #webcrumbs .h-8 {
+                height: 32px;
+            }
+            #webcrumbs .min-h-screen {
+                min-height: 100vh;
+            }
+            #webcrumbs .w-1\/3 {
+                width: 33.333333%;
+            }
+            #webcrumbs .w-1\/4 {
+                width: 25%;
+            }
+            #webcrumbs .w-10 {
+                width: 40px;
+            }
+            #webcrumbs .w-14 {
+                width: 56px;
+            }
+            #webcrumbs .w-2\/3 {
+                width: 66.666667%;
+            }
+            #webcrumbs .w-20 {
+                width: 80px;
+            }
+            #webcrumbs .w-8 {
+                width: 32px;
+            }
+            #webcrumbs .flex-1 {
+                flex: 1 1 0%;
+            }
+            #webcrumbs .-translate-y-1\/2 {
+                --tw-translate-y: -50%;
+            }
+            #webcrumbs .-translate-y-1\/2,
+            #webcrumbs .transform {
+                transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))
+                    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            }
+            #webcrumbs .grid-cols-1 {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+            #webcrumbs .flex-row {
+                flex-direction: row;
+            }
+            #webcrumbs .flex-col {
+                flex-direction: column;
+            }
+            #webcrumbs .items-center {
+                align-items: center;
+            }
+            #webcrumbs .justify-center {
+                justify-content: center;
+            }
+            #webcrumbs .justify-between {
+                justify-content: space-between;
+            }
+            #webcrumbs .gap-2 {
+                gap: 8px;
+            }
+            #webcrumbs .gap-4 {
+                gap: 16px;
+            }
+            #webcrumbs :is(.space-y-3 > :not([hidden]) ~ :not([hidden])) {
+                --tw-space-y-reverse: 0;
+                margin-bottom: calc(12px * var(--tw-space-y-reverse));
+                margin-top: calc(12px * (1 - var(--tw-space-y-reverse)));
+            }
+            #webcrumbs .rounded-full {
+                border-radius: 9999px;
+            }
+            #webcrumbs .border {
+                border-width: 1px;
+            }
+            #webcrumbs .border-b {
+                border-bottom-width: 1px;
+            }
+            #webcrumbs .border-l {
+                border-left-width: 1px;
+            }
+            #webcrumbs .border-r {
+                border-right-width: 1px;
+            }
+            #webcrumbs .border-gray-300 {
+                --tw-border-opacity: 1;
+                border-color: rgb(209 213 219 / var(--tw-border-opacity));
+            }
+            #webcrumbs .bg-black {
+                --tw-bg-opacity: 1;
+                background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .bg-gray-100 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .bg-gray-200 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .bg-gray-300 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .bg-white {
+                --tw-bg-opacity: 1;
+                background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .p-2 {
+                padding: 8px;
+            }
+            #webcrumbs .p-3 {
+                padding: 12px;
+            }
+            #webcrumbs .p-4 {
+                padding: 16px;
+            }
+            #webcrumbs .text-center {
+                text-align: center;
+            }
+            #webcrumbs .text-2xl {
+                font-size: 24px;
+                line-height: 31.200000000000003px;
+            }
+            #webcrumbs .text-sm {
+                font-size: 14px;
+                line-height: 21px;
+            }
+            #webcrumbs .text-xl {
+                font-size: 20px;
+                line-height: 28px;
+            }
+            #webcrumbs .text-xs {
+                font-size: 12px;
+                line-height: 19.200000000000003px;
+            }
+            #webcrumbs .font-bold {
+                font-weight: 700;
+            }
+            #webcrumbs .font-semibold {
+                font-weight: 600;
+            }
+            #webcrumbs .italic {
+                font-style: italic;
+            }
+            #webcrumbs .text-gray-600 {
+                --tw-text-opacity: 1;
+                color: rgb(75 85 99 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-white {
+                --tw-text-opacity: 1;
+                color: rgb(255 255 255 / var(--tw-text-opacity));
+            }
+            #webcrumbs .transition-colors {
+                transition-duration: 0.15s;
+                transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            #webcrumbs .transition-shadow {
+                transition-duration: 0.15s;
+                transition-property: box-shadow;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            #webcrumbs .duration-300 {
+                transition-duration: 0.3s;
+            }
+            #webcrumbs {
+                font-family: Open Sans !important;
+                font-size: 16px !important;
+            }
+            #webcrumbs .hover\:bg-gray-50:hover {
+                --tw-bg-opacity: 1;
+                background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .hover\:bg-gray-800:hover {
+                --tw-bg-opacity: 1;
+                background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .hover\:shadow-md:hover {
+                --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+                --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
+            @media (min-width: 768px) {
+                #webcrumbs .md\:col-span-1 {
+                    grid-column: span 1 / span 1;
+                }
+                #webcrumbs .md\:col-span-2 {
+                    grid-column: span 2 / span 2;
+                }
+                #webcrumbs .md\:col-span-3 {
+                    grid-column: span 3 / span 3;
+                }
+                #webcrumbs .md\:grid-cols-2 {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                }
+                #webcrumbs .md\:grid-cols-3 {
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                }
+            }
+            @media (min-width: 1024px) {
+                #webcrumbs .lg\:col-span-1 {
+                    grid-column: span 1 / span 1;
+                }
+                #webcrumbs .lg\:col-span-2 {
+                    grid-column: span 2 / span 2;
+                }
+                #webcrumbs .lg\:col-span-3 {
+                    grid-column: span 3 / span 3;
+                }
+                #webcrumbs .lg\:min-w-\[1024px\] {
+                    min-width: 1024px;
+                }
+                #webcrumbs .lg\:grid-cols-2 {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                }
+                #webcrumbs .lg\:grid-cols-3 {
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                }
+            }
+
+            body {
+                line-height: inherit;
+                padding: 24px;
+                display: flex;
+                flex-direction: column;
+                min-width: 100vw;
+                min-height: 100vh;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(135deg, #ffffff, #d4d4d4);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="webcrumbs">
+            <div class="flex flex-col min-h-screen lg:min-w-[1024px]">
+                <header class="flex items-center justify-center gap-2 bg-gray-300 p-4">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"></circle>
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 16h2v-2h-2v2zm0-4h2V7h-2v7z"
+                                fill="currentColor"
+                            ></path>
+                            <text x="12" y="13" text-anchor="middle" font-size="3" fill="white">NEWS</text>
+                        </svg>
+                        <h1 class="text-2xl font-bold">NOME</h1>
+                    </div>
+                </header>
+                <main class="flex-1 bg-white p-4">
+                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+                        <div class="md:col-span-2 lg:col-span-2 relative">
+                            <div class="border border-gray-300 mb-4">
+                                <div class="relative">
+                                    <div
+                                        class="aspect-video bg-gray-100 flex items-center justify-center border-b border-gray-300"
+                                    >
+                                        <svg
+                                            class="w-20 h-20"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M9 3H15L17 5H21C22.1 5 23 5.9 23 7V19C23 20.1 22.1 21 21 21H3C1.9 21 1 20.1 1 19V7C1 5.9 1.9 5 3 5H7L9 3ZM12 18C15.3 18 18 15.3 18 12C18 8.7 15.3 6 12 6C8.7 6 6 8.7 6 12C6 15.3 8.7 18 12 18ZM12 8C14.2 8 16 9.8 16 12C16 14.2 14.2 16 12 16C9.8 16 8 14.2 8 12C8 9.8 9.8 8 12 8Z"
+                                                fill="black"
+                                            ></path>
+                                            <circle cx="12" cy="12" r="3.5" stroke="white" stroke-width="1.5"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="bg-gray-200 p-3">
+                                        <h2 class="text-xl font-bold">titulo da notícia principal</h2>
+                                        <p class="text-sm text-gray-600">uma breve descrição da notícia principal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-1 lg:col-span-1 space-y-3 relative">
+                            <div class="flex border border-gray-300 hover:shadow-md transition-shadow duration-300">
+                                <div
+                                    class="w-1/3 bg-gray-100 flex items-center justify-center border-r border-gray-300"
+                                >
+                                    <svg
+                                        class="w-8 h-8"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9 3H15L17 5H21C22.1 5 23 5.9 23 7V19C23 20.1 22.1 21 21 21H3C1.9 21 1 20.1 1 19V7C1 5.9 1.9 5 3 5H7L9 3Z"
+                                            fill="black"
+                                        ></path>
+                                        <circle cx="12" cy="12" r="3.5" stroke="white" stroke-width="1.5"></circle>
+                                    </svg>
+                                </div>
+                                <div class="w-2/3 bg-gray-200 p-2">
+                                    <h3 class="font-semibold">Notícia secundária 1</h3>
+                                    <p class="text-xs text-gray-600">Uma breve descrição da notícia secundária 1</p>
+                                </div>
+                            </div>
+                            <div class="flex border border-gray-300 hover:shadow-md transition-shadow duration-300">
+                                <div
+                                    class="w-1/3 bg-gray-100 flex items-center justify-center border-r border-gray-300"
+                                >
+                                    <svg
+                                        class="w-8 h-8"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9 3H15L17 5H21C22.1 5 23 5.9 23 7V19C23 20.1 22.1 21 21 21H3C1.9 21 1 20.1 1 19V7C1 5.9 1.9 5 3 5H7L9 3Z"
+                                            fill="black"
+                                        ></path>
+                                        <circle cx="12" cy="12" r="3.5" stroke="white" stroke-width="1.5"></circle>
+                                    </svg>
+                                </div>
+                                <div class="w-2/3 bg-gray-200 p-2">
+                                    <h3 class="font-semibold">Notícia secundária 2</h3>
+                                    <p class="text-xs text-gray-600">Uma breve descrição da notícia secundária 2</p>
+                                </div>
+                            </div>
+                            <div class="flex border border-gray-300 hover:shadow-md transition-shadow duration-300">
+                                <div
+                                    class="w-1/3 bg-gray-100 flex items-center justify-center border-r border-gray-300"
+                                >
+                                    <svg
+                                        class="w-8 h-8"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9 3H15L17 5H21C22.1 5 23 5.9 23 7V19C23 20.1 22.1 21 21 21H3C1.9 21 1 20.1 1 19V7C1 5.9 1.9 5 3 5H7L9 3Z"
+                                            fill="black"
+                                        ></path>
+                                        <circle cx="12" cy="12" r="3.5" stroke="white" stroke-width="1.5"></circle>
+                                    </svg>
+                                </div>
+                                <div class="w-2/3 bg-gray-200 p-2">
+                                    <h3 class="font-semibold">Notícia secundária 3</h3>
+                                    <p class="text-xs text-gray-600">Uma breve descrição da notícia secundária 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="md:col-span-3 lg:col-span-3 border border-gray-300 p-4 flex items-center justify-between my-4 hover:bg-gray-50 transition-colors duration-300"
+                        >
+                            <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 4.5L11.5 2.5H16.5L14.5 4.5H9.5Z" fill="currentColor"></path>
+                                <path
+                                    d="M4 6H9L11 4H16L18 6H20C21.1 6 22 6.9 22 8V19C22 20.1 21.1 21 20 21H4C2.9 21 2 20.1 2 19V8C2 6.9 2.9 6 4 6ZM4 8V19H20V8H4Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path d="M3 8L7 13L3 18" stroke="currentColor" stroke-width="1.5"></path>
+                                <path d="M21 8L17 13L21 18" stroke="currentColor" stroke-width="1.5"></path>
+                            </svg>
+                            <p class="text-gray-600 italic text-center flex-1">Banner de publicidade</p>
+                        </div>
+                        <div class="md:col-span-3 lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                            <div class="flex border border-gray-300 hover:shadow-md transition-shadow duration-300">
+                                <div class="flex-1 bg-gray-200 p-3">
+                                    <h3 class="font-semibold">Título da notícia nível 3</h3>
+                                    <p class="text-xs text-gray-600">Uma breve descrição da notícia de nível 3.</p>
+                                </div>
+                                <div
+                                    class="w-1/4 bg-gray-100 flex items-center justify-center border-l border-gray-300"
+                                >
+                                    <svg
+                                        class="w-8 h-8"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9 3H15L17 5H21C22.1 5 23 5.9 23 7V19C23 20.1 22.1 21 21 21H3C1.9 21 1 20.1 1 19V7C1 5.9 1.9 5 3 5H7L9 3Z"
+                                            fill="black"
+                                        ></path>
+                                        <circle cx="12" cy="12" r="3.5" stroke="white" stroke-width="1.5"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex border border-gray-300 hover:shadow-md transition-shadow duration-300">
+                                <div class="flex-1 bg-gray-200 p-3">
+                                    <h3 class="font-semibold">Título da notícia nível 3</h3>
+                                    <p class="text-xs text-gray-600">Uma breve descrição da notícia de nível 3.</p>
+                                </div>
+                                <div
+                                    class="w-1/4 bg-gray-100 flex items-center justify-center border-l border-gray-300"
+                                >
+                                    <svg
+                                        class="w-8 h-8"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9 3H15L17 5H21C22.1 5 23 5.9 23 7V19C23 20.1 22.1 21 21 21H3C1.9 21 1 20.1 1 19V7C1 5.9 1.9 5 3 5H7L9 3Z"
+                                            fill="black"
+                                        ></path>
+                                        <circle cx="12" cy="12" r="3.5" stroke="white" stroke-width="1.5"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex border border-gray-300 hover:shadow-md transition-shadow duration-300">
+                                <div class="flex-1 bg-gray-200 p-3">
+                                    <h3 class="font-semibold">Título da notícia nível 3</h3>
+                                    <p class="text-xs text-gray-600">Uma breve descrição da notícia de nível 3.</p>
+                                </div>
+                                <div
+                                    class="w-1/4 bg-gray-100 flex items-center justify-center border-l border-gray-300"
+                                >
+                                    <svg
+                                        class="w-8 h-8"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9 3H15L17 5H21C22.1 5 23 5.9 23 7V19C23 20.1 22.1 21 21 21H3C1.9 21 1 20.1 1 19V7C1 5.9 1.9 5 3 5H7L9 3Z"
+                                            fill="black"
+                                        ></path>
+                                        <circle cx="12" cy="12" r="3.5" stroke="white" stroke-width="1.5"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex border border-gray-300 hover:shadow-md transition-shadow duration-300">
+                                <div class="flex-1 bg-gray-200 p-3">
+                                    <h3 class="font-semibold">Título da notícia nível 3</h3>
+                                    <p class="text-xs text-gray-600">Uma breve descrição da notícia de nível 3.</p>
+                                </div>
+                                <div
+                                    class="w-1/4 bg-gray-100 flex items-center justify-center border-l border-gray-300"
+                                >
+                                    <svg
+                                        class="w-8 h-8"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9 3H15L17 5H21C22.1 5 23 5.9 23 7V19C23 20.1 22.1 21 21 21H3C1.9 21 1 20.1 1 19V7C1 5.9 1.9 5 3 5H7L9 3Z"
+                                            fill="black"
+                                        ></path>
+                                        <circle cx="12" cy="12" r="3.5" stroke="white" stroke-width="1.5"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="bg-gray-300 p-4 text-center text-sm text-gray-600">Todos os direitos reservados</footer>
+            </div>
+        </div>
+    </body>
+</html>
